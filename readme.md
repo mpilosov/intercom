@@ -1,7 +1,7 @@
 
 # Intercom Assignment
 
-Tested using Python 3.6. Run as:
+Tested using Python 3.6. Run from the source directory as:
 
     $ python3 main.py
 
