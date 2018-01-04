@@ -13,6 +13,11 @@ import json
 import dist
 
 
+# Dublin office location.
+office_lat = 53.339428
+office_long = -6.257664
+
+
 # Loads and returns a list of customer records from the specified file, where
 # each line of the file is a JSON-encoded record.
 def load_customer_list(filepath):
@@ -33,7 +38,7 @@ def print_customer_list(customers):
 
 
 def main():
-    office_pos = dist.Pos(53.339428, -6.257664)
+    office_pos = dist.Pos(office_lat, office_long)
     local_customers = []
 
     for customer in load_customer_list('customers.json'):
