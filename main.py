@@ -23,7 +23,7 @@ def load_customer_list(filepath):
     return customers
 
 
-# Prints the name and ID of each customer in the specified list.
+# Prints the name and ID of each customer in the list.
 def print_customer_list(customers):
     print('  --     ----')
     print('  ID     NAME')
@@ -40,7 +40,7 @@ def main():
         latitude = float(customer['latitude'])
         longitude = float(customer['longitude'])
         customer_pos = dist.Pos(latitude, longitude)
-        if dist.distance(office_pos, customer_pos) < 100:
+        if dist.distance(office_pos, customer_pos) <= 100:
             local_customers.append(customer)
 
     local_customers.sort(key=lambda c: c['user_id'])
