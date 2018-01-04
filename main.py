@@ -25,9 +25,9 @@ def load_customer_list(filepath):
 
 # Prints the name and ID of each customer in the list.
 def print_customer_list(customers):
-    print('  --     ----')
-    print('  ID     NAME')
-    print('  --     ----')
+    print(' ----   ------')
+    print('  ID  |  NAME')
+    print(' ----   ------')
     for customer in customers:
         print('%4s  |  %s' % (customer['user_id'], customer['name']))
 
